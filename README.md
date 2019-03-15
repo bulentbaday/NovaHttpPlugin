@@ -2,7 +2,7 @@
 Mysql Http Request Plugin
 
 Windows
-MySQL 8.*
+MySQL 8.* (x64)
 
 CREATE FUNCTION HttpRequest RETURNS STRING
   SONAME 'NovaHttpPlugin.dll';
