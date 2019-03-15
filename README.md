@@ -4,9 +4,13 @@ Mysql Http Request Plugin
 * Windows
 * MySQL 8.* (x64)
 
-* Copy NovaHttpPlugin.dll to Mysql Plugin folder.
+* Don't forget to change include directory (D:\NOVAYAZILIM\mysql-8.0.15-winx64\include)
 
-* Create UDF Function by following script.
+* Make project to get dll file.
+
+* Copy NovaHttpPlugin.dll to MySQL Plugin folder.
+
+* Create UDF Function by following script. 
 
 CREATE FUNCTION HttpRequest RETURNS STRING
   SONAME 'NovaHttpPlugin.dll';
