@@ -16,6 +16,6 @@ CREATE FUNCTION HttpRequest RETURNS STRING
 
 * Examples:
 
-SELECT HttpRequest('http://www.novayazilim.com.tr', 'GET', 'text/html', null) data;
+SELECT HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) data;
 
-SELECT convert(HttpRequest('http://www.novayazilim.com.tr', 'GET', 'text/html', null) using utf8) data;
+SELECT convert(HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) using utf8) data;
