@@ -19,3 +19,5 @@ CREATE FUNCTION HttpRequest RETURNS STRING
 SELECT HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) data;
 
 SELECT convert(HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) using utf8) data;
+
+https://www.youtube.com/watch?v=mVJvchaI9RQ
