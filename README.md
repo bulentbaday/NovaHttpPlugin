@@ -1,6 +1,7 @@
 # NovaHttpPlugin
-Mysql Http Request Plugin
+This plugin allows you to make http request from your MySQL database. It is suitable for Windows Servers. The following guide helps you how to set it up.
 
+## Reuirements
 * Windows
 * MySQL 8.* (x64)
 
