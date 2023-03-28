@@ -1,22 +1,20 @@
 # NovaHttpPlugin
-This plugin allows you to make http request from your MySQL database. It is suitable for Windows Servers. The following guide helps you how to set it up.
+This plugin allows you to make http requests from your MySQL database. It is suitable for Windows Servers. The following guide helps you how to set it up.
 
-## Reuirements
-* Windows
-* MySQL 8.* (x64)
+* Clone or download the project files into your machine.
 
-* Don't forget to change include directory (D:\NOVAYAZILIM\mysql-8.0.15-winx64\include)
+* Please do not forget to change include directory (..\mysql-8.0.23-winx64\include) according to your machine.
 
-* Make project to get dll file.
+* Build it by using any C++ compiler to get dll file.
 
-* Copy NovaHttpPlugin.dll to MySQL Plugin folder.
+* Copy NovaHttpPlugin.dll file into the plugin folder of your MySQL server. It is located in ..\mysql-8.0.23-winx64\lib\plugin.
 
-* Create UDF Function by following script. 
+* In order to create an UDF Function, execute following script.
 
 CREATE FUNCTION HttpRequest RETURNS STRING
   SONAME 'NovaHttpPlugin.dll';
 
-* e.g.
+* Examples:
 
 SELECT HttpRequest('http://www.novayazilim.com.tr', 'GET', 'text/html', null) data;
 
