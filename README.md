@@ -3,13 +3,13 @@ This plugin allows you to make http requests from your MySQL database. It is sui
 
 * Clone or download the project files into your machine.
 
-* Please do not forget to change include directory (..\mysql-8.0.23-winx64\include) according to your machine.
+* Please do not forget to change include directory (\include) according to your machine.
 
-* Build it by using any C++ compiler to get dll file.
+* Build it by using any C++ compiler to generate dll library.
 
-* Copy NovaHttpPlugin.dll file into the plugin folder of your MySQL server. It is located in ..\mysql-8.0.23-winx64\lib\plugin.
+* Copy NovaHttpPlugin.dll library into the plugin folder of your MySQL server. It is located in \lib\plugin.
 
-* In order to create an UDF Function, execute following script.
+* In order to create a UDF Function, execute following script.
 
 CREATE FUNCTION HttpRequest RETURNS STRING
   SONAME 'NovaHttpPlugin.dll';
