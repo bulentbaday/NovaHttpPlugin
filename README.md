@@ -24,4 +24,4 @@ SELECT convert(HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html',
 
 You can also watch the video tutorial below that shows you how to perform each steps.
 
-https://www.youtube.com/watch?v=mVJvchaI9RQ
+https://youtu.be/mVJvchaI9RQ
