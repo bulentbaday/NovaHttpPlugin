@@ -20,8 +20,8 @@ SELECT HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) d
 
 SELECT convert(HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) using utf8) data;
 
-## Video Tutorial
+## YouTube
 
-You can also watch the tutorial video below that shows you how to perform each steps.
+You can also watch the video tutorial below that shows you how to perform each steps.
 
 https://www.youtube.com/watch?v=mVJvchaI9RQ
