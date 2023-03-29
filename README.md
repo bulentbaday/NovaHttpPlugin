@@ -14,10 +14,14 @@ This plugin allows you to make http requests from your MySQL database. It is sui
 CREATE FUNCTION HttpRequest RETURNS STRING
   SONAME 'NovaHttpPlugin.dll';
 
-* Examples:
+## Examples:
 
 SELECT HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) data;
 
 SELECT convert(HttpRequest('https://www.novayazilim.com.tr', 'GET', 'text/html', null) using utf8) data;
+
+## Video Tutorial
+
+You can also watch the tutorial video below that shows you how to perform each steps.
 
 https://www.youtube.com/watch?v=mVJvchaI9RQ
